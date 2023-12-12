@@ -1,4 +1,3 @@
-# Iniciando o projeto
 """
 Django settings for super_portfolio project.
 

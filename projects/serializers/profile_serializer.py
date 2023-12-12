@@ -5,4 +5,4 @@ from projects.models import Profile
 class ProfileSerializer(serializers.ModelSerializer):
     class Meta:
         model = Profile
-        fields = ["name", "github", "linkedin", "bio"]
+        fields = ["id", "name", "github", "linkedin", "bio"]

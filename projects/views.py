@@ -7,7 +7,7 @@ from projects.serializers import ProfileSerializer, ProjectSerializer
 
 
 # Create your views here.
-class ProfileView(viewsets.ModelViewSet):
+class ProfileViewSet(viewsets.ModelViewSet):
     queryset = Profile.objects.all()
     serializer_class = ProfileSerializer
 

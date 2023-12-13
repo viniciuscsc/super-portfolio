@@ -51,8 +51,6 @@ class NestedCertificateSerializer(serializers.ModelSerializer):
         fields = [
             "id",
             "name",
-            "timestamp",
-            "profiles",
         ]
 
 

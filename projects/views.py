@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from rest_framework import viewsets
-from projects.models import Profile
+from projects.models import Profile, Project
 from projects.serializers import ProfileSerializer, ProjectSerializer
 
 
@@ -11,5 +11,5 @@ class ProfileView(viewsets.ModelViewSet):
 
 
 class ProjectView(viewsets.ModelViewSet):
-    queryset = Profile.objects.all()
+    queryset = Project.objects.all()
     serializer_class = ProjectSerializer

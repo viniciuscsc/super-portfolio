@@ -21,7 +21,7 @@ class ProfileViewSet(viewsets.ModelViewSet):
         if request.method == "GET":
             context = {"profile": self.get_object()}
 
-            return render(request, "profile.html", context)
+            return render(request, "profile_detail.html", context)
 
         return super().retrieve(request, *args, **kwargs)
 
